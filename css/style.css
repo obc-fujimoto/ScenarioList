@@ -21,8 +21,45 @@ body {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
   }
   
-  .child-group {
+  .check-group {
     margin-left: 20px;
-    margin-bottom: 10px;
+    padding-left: 10px;
   }
+  
+  .check-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+  }
+
+  /* タブ */
+.tab-labels {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.tab {
+  padding: 8px 16px;
+  background-color: #ddd;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* 初期状態では非表示にする */
+.kp-list,
+.pl-list {
+  display: none;
+}
+
+/* KPを選択したときだけ表示する */
+#role-kp:checked ~ .kp-list {  /*id=role-kp :checked=ラジオボタンが「選択されている状態」~=後ろにある兄弟要素を選択する class=kp-list*/
+  display: block;
+}
+
+/* PLを選択したときだけ表示する */
+#role-pl:checked ~ .pl-list {
+  display: block;
+}
+
   
