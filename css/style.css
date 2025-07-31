@@ -62,4 +62,12 @@ body {
   display: block;
 }
 
-  
+#role-kp:checked ~ .tab-labels label[for="role-kp"] {
+  background-color: #ffb03a;
+  color: white;
+}
+
+#role-pl:checked ~ .tab-labels label[for="role-pl"] {
+  background-color: #77a2ff;
+  color: white; 
+}
