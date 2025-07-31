@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>これから回るシナリオリスト</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <header>
+    <h1>これから回るシナリオリスト</h1>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>シナリオタイトルA</h2>
+
+      <p>シナリオURL: <a href="#">画像にリンクを仕込む</a></p>
+      <p>プレイ人数: リール状で選択できるようにする</p>
+      <p>開催日程:カレンダーから選択できるようにする</p>
+      <p>用意するもの</p>
+
+      <div class="role-switch">
+        <input type="radio" name="role1" id="role-kp" class="role-radio" hidden>
+        <input type="radio" name="role1" id="role-pl" class="role-radio" hidden>
+      
+        <div class="tab-labels">
+          <label for="role-kp" class="tab">KP</label>
+          <label for="role-pl" class="tab">PL</label>
+        </div>
+      
+        <!-- KPのチェックリスト -->
+        <div class="checklist kp-list">
+          <div class="check-group">
+            <label><input type="checkbox"> シナリオ</label>
+            <label><input type="checkbox"> ココフォリア内設定</label>
+            <label><input type="checkbox"> 背景</label>
+            <label><input type="checkbox"> キャラ駒</label>
+            <label><input type="checkbox"> シーンカット</label>
+            <label><input type="checkbox"> BGM</label>
+            <label><input type="checkbox"> シナリオテキスト</label>
+            <label><input type="checkbox"> NPC画像</label>
+            <label><input type="checkbox"> NPCステータス</label>
+            <label><input type="checkbox"> チャットパレット</label>
+            <label><input type="checkbox"> シナリオ</label>
+          </div>
+        </div>
+      
+        <!-- PLのチェックリスト -->
+        <div class="checklist pl-list">
+          <div class="check-group">
+            <label><input type="checkbox">キャラクターシート</label>
+            <label><input type="checkbox">キャラ立ち絵</label>
+            <label><input type="checkbox">ココフォリア内駒</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
